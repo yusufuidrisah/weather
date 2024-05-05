@@ -1,0 +1,180 @@
+.card {
+    display:grid;
+    grid-template-columns:110px 110px 110px 110px 110px 110px;
+    width: 20%;
+    
+}
+
+.column {
+    /* flex: 1; */
+    padding: 30px;
+    /* border-bottom: 2px solid; */
+    text-align: center;
+    border-right: 1px solid #ccc;
+   
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+div .card .column h2{
+    font-size:13px;
+}
+
+.evaluation{
+    display: grid;
+    grid-template-columns: 300px 150px 100px;
+}
+
+.days-div{
+    border-bottom: 2px solid black;
+    display:grid;
+    grid-template-columns: 50px 25px 80px 50px;
+}
+
+ .days-7{ 
+    width:300px;
+    height: 700px;
+    margin-left: 20px;
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    padding: 30px;
+    background-color:rgb(72, 72, 132) ;
+    border-radius: 4px;
+}
+
+.days{
+    display:grid;
+    grid-template-columns:90px 40px ;
+}
+
+.days-div p:first-child {
+    margin-right: 20px;
+    font-size: 15px;
+    padding;
+}
+
+input{
+    width:710px;
+    padding: 20px;
+    height: 30px;
+    margin-left:20px;
+    background-color:rgb(72, 72, 132) ;
+    border: none;
+    border-radius: 4px;
+}
+
+::placeholder{
+    color: white;
+}
+
+
+
+.first-div{
+    background-color: rgb(1, 1, 58);
+    width:650px ;
+    height: 120px;
+    /* height: 100px; */
+    padding: 30px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.second-div{
+    width:650px;
+   margin-top: 30px;
+    /* height: 100px; */
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(72, 72, 132);
+    border-radius: 4px;
+}
+
+.third-div{
+    width:650px ;
+    /* height: 100px; */
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(72, 72, 132) ;
+    border-radius: 4px;
+}
+p.city{
+    font-size: 30px;
+}
+
+.message{
+    position: relative;
+    bottom:18px ;
+    font-size: 10px;
+}
+
+.degree{
+    font-size: 40px;
+    position: relative;
+    bottom:30px ;
+}
+
+.large-icon{
+    font-size: 100px;
+    color: rgb(250, 196, 24);
+    width: 100px;
+    position: relative;
+    bottom: 270px;
+    left: 400;
+}
+
+body{
+    background-color: rgb(1, 1, 58);
+}
+
+.column p:last-child{
+    color: white;
+}
+
+.column h2{
+    color:rgb(175, 163, 163) ;
+}
+
+.details p{
+    color:rgb(175, 163, 163) ;
+}
+
+.days-div :nth-child(3){
+    color: white;
+}
+
+.days-div :first-child{
+color:rgb(175, 163, 163) ;
+}
+
+.days-7 :first-child{
+    color:rgb(175, 163, 163) ;
+}
+
+.days-div :last-child{
+    color:rgb(175, 163, 163) ;
+}
+
+.air-condition{
+    color:rgb(175, 163, 163) ;
+}
+
+button{
+    background-color: rgb(10, 105, 248);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.air-condition-header{
+    color:rgb(175, 163, 163) ;
+}
+
+
