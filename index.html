@@ -26,11 +26,17 @@
     <div class="container-fluid p-3" style="background-color: #6495ed">
       <div class="row">
         <div class="col-md-6 col-sm-8 col-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Search for cities"
-          />
+          <div class="d-flex">
+            <input
+              type="text"
+              class="form-control me-2"
+              placeholder="Search for cities"
+              id="city-input"
+            />
+            <button type="button" class="btn btn-light" id="button-search">
+              <i class="bi-search"></i> Search
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -43,17 +49,22 @@
             <div class="card-body p-2">
               <div class="">
                 <div>
-                  <h1 class="card-title">Madrid</h1>
-                  <p class="card-text">Chance of rain: 0%</p>
+                  <h1 class="card-title" id="city-name">Madrid</h1>
+                  <p class="card-text" id="up-desc">Chance of rain: 0%</p>
                 </div>
                 <div>
-                  <h1 class="display-1">31&deg;</h1>
+                  <h1 class="display-1" id="current-temperature">31&deg;</h1>
                 </div>
               </div>
               <div class="text-center mt-auto">
                 <p
                   class="large-icon"
-                  style="font-size: 95px; position: relative; bottom: 60px;left: 80px;"
+                  style="
+                    font-size: 95px;
+                    position: relative;
+                    bottom: 60px;
+                    left: 80px;
+                  "
                 >
                   <i class="bi-sun-fill"></i>
                 </p>
@@ -64,7 +75,7 @@
 
         <!-- New 7-day forecast div -->
         <div class="col-md-6">
-          <div class="p-3">
+          <div class="">
             <p class="details text-white"><strong>TODAY'S FORECAST</strong></p>
           </div>
           <div class="card">
@@ -133,24 +144,24 @@
                     <div>
                       <p><strong>Today</strong></p>
                       <p class="icon">☀️</p>
-                      <p>Sunny</p>
-                      <p>36/22</p>
+                      <p id="today-desc">Sunny</p>
+                      <p id="temp">36/22</p>
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-3">
                     <div>
                       <p><strong>Wed</strong></p>
                       <p class="icon">☀️</p>
-                      <p>Sunny</p>
-                      <p>36/22</p>
+                      <p id="tom-desc">Sunny</p>
+                      <p id="tom">36/22</p>
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-3">
                     <div>
                       <p><strong>Thu</strong></p>
                       <p class="icon">☀️</p>
-                      <p>Sunny</p>
-                      <p>36/22</p>
+                      <p id="tom-to-desc">Sunny</p>
+                      <p id="tom-to">36/22</p>
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-3 mb-3">
@@ -193,10 +204,12 @@
         </div>
 
         <div class="col-md-6">
-          <div class="text-start p-3 mt-3">
-            <p class="air-condition mt-50 text-white"><strong>AIR CONDITION</strong></p>
+          <div class="text-start">
+            <p class="air-condition mt-50 text-white">
+              <strong>AIR CONDITION</strong>
+            </p>
           </div>
-          <div class="card p-3">
+          <div class="card">
             <div class="card-body">
               <div class="row">
                 <div class="col-md-3 col-sm-3 col-9">
@@ -244,8 +257,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/weather.js">
-
-    </script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
